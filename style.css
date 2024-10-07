@@ -1,0 +1,147 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    max-width: 900px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+#logo {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.navigation-items {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+}
+
+ul.navigation-items {
+    align-items: center;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+li.navigation-items {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+a {
+ color: blue;
+text-decoration: none;
+font-weight: 600;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+section {
+    padding: 0;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-me-container {
+        flex-direction: column;
+    }
+}
+
+.about-me-container {
+    display: flex;
+    margin-right: var(--spacing-3);
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    unicode-bidi: isolate; 
+}
+
+.portrait {
+    width: 300px;
+    border-radius: var(--border-radius);
+    flex-shrink: 0;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    resize: both;
+    width: 200px;
+    height: 100px;
+
+}
+
+details {
+    cursor: pointer;
+    display: block;
+}
+
+section {
+    padding: var(--spacing-3) 0;
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+#skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 2em;
+    width: 2em;
+    margin-top: var(--spacing-1);
+}
+
+.fab, .far {
+    font-weight: 400;
+}
+
+
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+:root {
+    --background-color-light: #ffffff;
+    --text-color-light: #000000;
+    --background-color-dark: #121212;
+    --text-color-dark: #ffffff;
+  }
+
+  .dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+  }
